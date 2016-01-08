@@ -121,8 +121,8 @@ shinyServer(
       )
       colorPram <- input$colors 
       stateData <- switch(input$var,
-          "Total population (06.2015)"=inputData$Population,
-          "House seat number"=inputData$'House seat number',
+          "Total population (06.2015)"=inputData$Population_06.2015,
+          "House seat number"=inputData$House_seat_number,
           "Use my own data"=c(input$Alabama,
                               input$Alaska,
                               input$Arizona,
