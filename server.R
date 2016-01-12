@@ -62,7 +62,7 @@ shinyServer(
     
     output$map <- renderPlot({
       stateName <-switch(input$var,
-                        "Total population (06.2015)"=inputData$State,
+                        "Total population"=inputData$State,
                         "House seat number"=inputData$State,
                         "Use my own data"=c('Alabama',
                                             'Arizona',
@@ -117,7 +117,7 @@ shinyServer(
       )
       colorPram <- input$colors 
       stateData <- switch(input$var,
-          "Total population (06.2015)"=inputData$Population_06.2015,
+          "Total population"=inputData$Population_06.2015,
           "House seat number"=inputData$House_seat_number,
           "Use my own data"=c(input$Alabama,
                               input$Arizona,
@@ -171,7 +171,7 @@ shinyServer(
 
                          )
       maptitle <- switch(input$var,
-                         "Total population (06.2015)"="Total population (06.2015)",
+                         "Total population"="Total population (06.2015)",
                          "House seat number"="House seat number",
                          "Use my own data"=input$title)
       

@@ -5,7 +5,7 @@ shinyUI(  fluidPage(
       column(2,
         selectInput("var",
                     label="Choose an option",
-                    choices=c("Total population (06.2015)",
+                    choices=c("Total population",
                               "House seat number",
                               "Use my own data"),
                     selected = "Total Population"),

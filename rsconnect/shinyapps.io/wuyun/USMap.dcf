@@ -2,6 +2,6 @@ name: USMap
 account: wuyun
 server: shinyapps.io
 appId: 77025
-bundleId: 348279
+bundleId: 348360
 url: https://wuyun.shinyapps.io/USMap/
-when: 1452618587.12593
+when: 1452626853.61979
